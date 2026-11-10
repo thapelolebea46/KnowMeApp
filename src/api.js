@@ -1,8 +1,7 @@
 import * as SecureStore from "expo-secure-store";
 
-export const API =
-  process.env.EXPO_PUBLIC_API_URL || "https://quiz-backend-21jc.onrender.com";
-export const WEB = process.env.EXPO_PUBLIC_WEB_URL || "http://localhost:5173";
+export const API = "https://quiz-backend-21jc.onrender.com";
+export const WEB = "https://quiz-web-yg8l.onrender.com";
 
 let token = null;
 let userName = "";
