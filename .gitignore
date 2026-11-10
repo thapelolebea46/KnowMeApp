@@ -35,7 +35,10 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+#files
+native.zip
 
 # generated native folders
 /ios
 /android
+/files for react native

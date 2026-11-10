@@ -1,18 +1,32 @@
-import { StyleSheet } from "react-native";
+// Design tokens pulled from the mockups: warm cream paper, electric purple, lime accent.
+export const c = {
+  paper: "#FAF6EE",
+  ink: "#1C1A17",
+  purple: "#6B46EA",
+  purpleDark: "#5636D1",
+  lavender: "#EAE5FF",
+  lime: "#DCF26A",
+  line: "#E7E1D3",
+  fill: "#F3EFE6",
+  muted: "#6F6A60",
+  faint: "#9A9486",
+  white: "#FFFFFF",
+  danger: "#C0153F",
+};
 
-export const c = { paper: "#f2efff", ink: "#1a1240", pink: "#ff4f87", sun: "#ffd23f" };
+// Loaded in app/_layout.js via @expo-google-fonts
+export const f = {
+  display: "SpaceGrotesk_700Bold",
+  body: "Inter_400Regular",
+  medium: "Inter_500Medium",
+  semi: "Inter_600SemiBold",
+  bold: "Inter_700Bold",
+};
 
-export const s = StyleSheet.create({
-  screen: { flex: 1, backgroundColor: c.paper, padding: 20 },
-  h1: { fontSize: 34, fontWeight: "800", color: c.ink, marginBottom: 8 },
-  h2: { fontSize: 20, fontWeight: "700", color: c.ink },
-  muted: { color: c.ink, opacity: 0.65 },
-  input: { borderWidth: 2.5, borderColor: c.ink, borderRadius: 14, backgroundColor: "#fff",
-    padding: 14, fontSize: 16, color: c.ink, marginBottom: 12 },
-  btn: { backgroundColor: c.sun, borderWidth: 2.5, borderColor: c.ink, borderRadius: 14,
-    padding: 15, alignItems: "center", marginTop: 4 },
-  btnText: { fontWeight: "800", fontSize: 16, color: c.ink },
-  card: { backgroundColor: "#fff", borderWidth: 2.5, borderColor: c.ink, borderRadius: 14,
-    padding: 14, marginBottom: 12 },
-  error: { color: "#c0153f", marginBottom: 10, fontWeight: "600" },
-});
+export const shadow = {
+  shadowColor: "#1C1A17",
+  shadowOpacity: 0.06,
+  shadowRadius: 12,
+  shadowOffset: { width: 0, height: 4 },
+  elevation: 2,
+};
